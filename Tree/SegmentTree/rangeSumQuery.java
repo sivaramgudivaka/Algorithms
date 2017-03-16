@@ -1,3 +1,4 @@
+/* https://leetcode.com/problems/range-sum-query-mutable */
 package leet;
 
 public class rangeSumQuery {
@@ -82,7 +83,6 @@ class SegmentTree {
 		if(i > high || j < low){
 			return 0;
 		}
-		/* total overlap */
 		if(low >= i && high <= j){
 			return indices[pos];
 		}
